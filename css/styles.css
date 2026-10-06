@@ -1,3 +1,90 @@
-body {
-    background-color: plum;
+/* ========================================== VARIABLES ==========================================*/
+:root {
+    --ink: #17324A; /* header, footer, headings */
+    --ink-soft: #4A6075; /* softer text */
+    --paper: #F5F8FA; /* page background */
+    --line: #D3DDD5; /* borders */
+    --river: #1F7A8C; /* main accent: links, buttons */
+    --hudson: #165F6D;
+    --gold: #F2B134; /* highlight accent */
+
+    --head: "Space Grotesk", "Segoe UI", Arial, sans-serif; /* header text */
+    --body: "Source Sans 3", "Segoe UI", Arial, sans-serif; /* body text */
+
+    --max-width: 1100px;
+    --header-height: 70px;
 }
+/* ========================================== RESET & BASE ==========================================*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* padding and border width count inside of the box width */
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth; /* smooth nav-link scrolling */
+    scroll-padding-top: var(--header-height); /* adds padding to the scroll height */
+}
+body {
+    font-family: var(--body);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: var(--ink);
+    background-color: var(--paper);
+}
+h1, h2, h3 {
+    font-family: var(--head);
+    line-height: 1.2;
+}
+a {
+    color: var(--river);
+}
+a:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+/* ========================================== HEADER & NAVIGATION ==========================================*/
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: var(--header-height);
+    background-color: var(--ink);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: white;
+}
+.logo-initials {
+    font-family: var(--head);
+    font-weight: 700;
+    background-color: var(--gold);
+    color: var(--ink);
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex; /* Flexbox can center one item perfectly */
+    align-items: center;
+    justify-content: center;
+}
+/* ========================================== ABOUT ==========================================*/
+
+/* ========================================== SKILLS ==========================================*/
+
+/* ========================================== PROJECT ==========================================*/
+
+/* ========================================== FOOTER ==========================================*/
+
+/* ========================================== MEDIA QUERY ==========================================*/
