@@ -182,5 +182,53 @@ main h2 {
 /* ========================================== PROJECT ==========================================*/
 
 /* ========================================== FOOTER ==========================================*/
+.site-footer {
+    background-color: var(--ink);
+    color: white;
+    padding: 3.5rem 1.5rem 1.5rem;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    gap: 2.5rem;
+}
+.footer-col h2 {
+    font-size: 1.2rem;
+    color: white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid var(--gold);
+    display: inline-block;
+}
+.footer-col ul {
+    list-style: none;
+}
+.footer-col li {
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+.footer-col a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.footer-col a:hover {
+    color: var(--gold);
+    text-decoration: underline;
+}
+.footer-bottom {
+    max-width: var(--max-width);
+    margin: 2.5rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.95rem;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
 /* ========================================== MEDIA QUERY ==========================================*/
