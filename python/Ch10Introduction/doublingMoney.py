@@ -10,8 +10,9 @@
 # -- Report year as the answer --
 year = 0
 balance = 10000
-while balance < 20000:
+while balance < 20000: # the loop will run until the balance is >= 20,000
     year += 1
     interest = balance * 0.05
-    balance = balance + interest
-print(year)
+    balance += interest
+print("Years to double:", year)
+print("Final balance:", f"{balance:.2f}")
