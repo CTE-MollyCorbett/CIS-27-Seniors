@@ -49,6 +49,40 @@ hours = screenMinutes // HR
 minutes = screenMinutes % HR
 print("")
 print(hours, "hours and", minutes, "minutes.")
+# Convert a video length in seconds to minutes and seconds
+videoSeconds = 754
+MIN = 60
+minutes = videoSeconds // MIN
+seconds = videoSeconds % MIN
+print("Video length:", minutes, "minutes and", seconds, "sec.")
+n = 2026
+print("\nLast Digit:", n % 10)
+print("Without last digit:", n // 10)
+print("Even? Remainder is:", n % 2)
+# Demo 5
+print("\nDEMO 5 - Built-in Functions, the Math module, roundoff")
+def demo5_functions():
+    from math import sqrt, pi
+    print("abs(-42) =", abs(-42))                                   # 42 Built-in
+    print("round(3.14159) =", round(3.14159))                       #3 Built-in
+    print("round(3.14159, 3) =", round(3.14159, 3))                 # 3.142 Built-in
+    print("max(52, 64, 37, 89, 34) =", max(52, 64, 37, 89, 34))     # 89 Built-in
+    print("min(52, 64, 37, 89, 34) =", min(52, 64, 37, 89, 34))     # 34 Built-in
+    # math module functions
+    a = 3
+    b = 4
+    c = sqrt((a ** 2) + (b ** 2))
+    print("\nHypotenuse:", c)                 # 5.0
+    print("Find the area of a circle:")
+    radius = 2.5
+    area = pi * radius ** 2
+    print("Circle area:", round(area, 2))
+    print("Roundoff error: binary can't store 4.35 exactly")
+    price = 4.35
+    quantity = 100
+    total = price * quantity
+    print("Total:", total)
+demo5_functions()
 # Import
 from math import sqrt, pi
 radius = sqrt(50)
